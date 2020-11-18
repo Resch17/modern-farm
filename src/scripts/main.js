@@ -3,6 +3,7 @@ import {addPlant} from "./field.js";
 import {usePlants} from "./field.js";
 
 import {plantSeeds} from "./tractor.js";
+import {harvestPlants} from "./harvester.js";
 const yearlyPlan = createPlan();
 console.log(yearlyPlan);
 
@@ -18,4 +19,6 @@ console.log(yearlyPlan);
 // addPlant(cornSeed);
 // console.log("field contents", usePlants());
 plantSeeds(yearlyPlan);
-console.log(usePlants());
+const plantsToHarvest = usePlants();
+const harvest = harvestPlants(plantsToHarvest);
+console.log(harvest);
