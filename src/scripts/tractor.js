@@ -7,11 +7,11 @@ import {createSunflower} from "./seeds/sunflower.js";
 import {createWheat} from "./seeds/wheat.js";
 
 export const plantSeeds = (plan) => {
-  
+
   for (let i=0;i<plan.length;i++) {
     for (const x of plan[i]) {
       let seed;
-      switch (plan[i][x]) {
+      switch (x) {
         case "Asparagus":
           seed = createAsparagus();
           break;
