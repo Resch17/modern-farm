@@ -4,9 +4,12 @@ import {usePlants} from "./field.js";
 import {Catalog} from "./catalog.js";
 import {plantSeeds} from "./tractor.js";
 import {harvestPlants} from "./harvester.js";
+
 const yearlyPlan = createPlan();
 plantSeeds(yearlyPlan);
+
 const plantsToHarvest = usePlants();
+
 const harvest = harvestPlants(plantsToHarvest);
 console.log(harvest);
 
