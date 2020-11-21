@@ -42,10 +42,18 @@ h6 {
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 95%;
+  width: 65%;
   justify-content: center;
+  margin: 0 auto;
+  background-color: #694c20;
+  color: #000;
+  text-align: center;
 }
 
 .plant {
   margin: 1em;
+  flex-basis: 15%;
+  border: 1px solid #333;
+  border-radius: 7px;
+  background-color: #c7c56f;
 }
