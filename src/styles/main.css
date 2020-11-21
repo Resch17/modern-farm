@@ -2,6 +2,10 @@
 
 /*Typography
 --------------------------------------------------------------*/
+*{
+  margin: 0 auto;
+  box-sizing: border-box;
+}
 body,
 button,
 input,
@@ -23,6 +27,7 @@ h6 {
   letter-spacing: 2px;
 }
 
+
 .blue {
   background-color: aliceblue;
 }
@@ -39,15 +44,24 @@ h6 {
   background-color: darksalmon;
 }
 
+h1 {
+  color: white;
+  padding: 1em;
+  background-color: black;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 65%;
+  width: 95%;
+  height: 100vh;
   justify-content: center;
   margin: 0 auto;
+  padding: 0.5em; 
   background-color: #694c20;
   color: #000;
   text-align: center;
+  background-image: url("/./images/dark-wood.jpg");
 }
 
 .plant {
@@ -55,5 +69,12 @@ h6 {
   flex-basis: 15%;
   border: 1px solid #333;
   border-radius: 7px;
-  background-color: #c7c56f;
+  background-color: #c7c56fdd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plant p {
+  font-weight: bold;
 }
