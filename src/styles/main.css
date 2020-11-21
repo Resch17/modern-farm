@@ -6,6 +6,7 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
+
 body,
 button,
 input,
@@ -44,10 +45,20 @@ h6 {
   background-color: darksalmon;
 }
 
-h1 {
-  color: white;
-  padding: 1em;
-  background-color: black;
+
+body {
+  background-image: url("/./images/dark-wood.jpg");
+}
+
+.title {
+  text-align: center;
+  /* height: 3em; */
+}
+
+.title h1 {
+  color: #fff;
+  font-size: 2.5em;
+  /* margin: 0.25em; */
 }
 
 .container {
@@ -58,23 +69,28 @@ h1 {
   justify-content: center;
   margin: 0 auto;
   padding: 0.5em; 
-  background-color: #694c20;
+  background-color: #694c2077;
   color: #000;
   text-align: center;
-  background-image: url("/./images/dark-wood.jpg");
 }
 
 .plant {
-  margin: 1em;
-  flex-basis: 15%;
   border: 1px solid #333;
   border-radius: 7px;
   background-color: #c7c56fdd;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.25em 0.5em;
+  flex-basis: 15%;
+  margin: 0.5em;
+}
+
+.plant img {
+  width: 64px;
 }
 
 .plant p {
   font-weight: bold;
+  margin-left: 1em;
 }
