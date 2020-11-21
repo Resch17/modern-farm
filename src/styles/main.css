@@ -65,7 +65,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 95%;
-  height: 100vh;
+  height: 90vh;
   justify-content: center;
   margin: 0 auto;
   padding: 0.5em; 
@@ -83,6 +83,10 @@ body {
   padding: 0.25em 0.5em;
   flex-basis: 15%;
   margin: 0.5em;
+}
+
+.plant:hover {
+  background-color: #c7c56f;
 }
 
 .plant img {
