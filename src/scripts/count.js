@@ -1,8 +1,4 @@
 export const countHarvest = (harvestArray) => {
-  const harvestToCount = harvestArray.slice();
-
-  for (let i = 0; i < harvestToCount.length; i++) {
-    harvestToCount[i].id = i + 1;
-  }
-  return harvestToCount;
+  const countedArray = harvestArray.map((item, index)=>({...item, id: index + 1}))
+  return countedArray;
 };

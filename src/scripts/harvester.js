@@ -1,6 +1,6 @@
 export const harvestPlants = (plants) => {
-  let seedObjects = [];
   
+  let seedObjects = [];
   for (const plant of plants) {
     if (plant.type !== "Corn") {
       let plantQuantity = plant.output;
@@ -15,20 +15,5 @@ export const harvestPlants = (plants) => {
     }
   }
   
-  // console.log(seedObjects)
-  // // add incrementing id property to each plant object in the harvest using for loop's iteration
-  // for (let i=0;i<seedObjects.length;i++){
-  //   seedObjects[i].id = i+1;
-  // }
-
-
-  // // add incrementing id property to each plant object in the harvest using separate counting variable
-  // let count = 1;
-  // for (let i=0;i<seedObjects.length;i++){
-  //   seedObjects[i].id = count;
-  //   count++;
-  // }
-
   return seedObjects;
-
 };
