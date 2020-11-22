@@ -4,7 +4,6 @@ import { Catalog } from "./catalog.js";
 import { plantSeeds } from "./tractor.js";
 import { harvestPlants } from "./harvester.js";
 import { countHarvest } from "./count.js";
-import { testData } from "./testData.js";
 
 const yearlyPlan = createPlan();
 plantSeeds(yearlyPlan);
