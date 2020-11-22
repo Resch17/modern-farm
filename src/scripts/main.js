@@ -4,6 +4,7 @@ import { Catalog } from "./catalog.js";
 import { plantSeeds } from "./tractor.js";
 import { harvestPlants } from "./harvester.js";
 import { countHarvest } from "./count.js";
+import { testData } from "./testData.js";
 
 const yearlyPlan = createPlan();
 plantSeeds(yearlyPlan);
@@ -11,13 +12,14 @@ plantSeeds(yearlyPlan);
 const plantsToHarvest = usePlants();
 console.log("Pre-harvest:", plantsToHarvest);
 
+
 const harvest = harvestPlants(plantsToHarvest);
 console.log("Harvest: ", harvest);
 
 const countedHarvest = countHarvest(harvest);
 console.log("counted: ", countedHarvest);
 
-const harvestToSort = harvest.slice();
+const harvestToSort = countedHarvest.slice();
 
 const sortedHarvest = harvestToSort.sort((a, b) => {
   if (a.type > b.type) return 1;
