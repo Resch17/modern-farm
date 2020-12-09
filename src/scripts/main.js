@@ -16,7 +16,7 @@ const harvest = harvestPlants(plantsToHarvest);
 console.log("Harvest: ", harvest);
 
 const countedHarvest = countHarvest(harvest);
-console.log("counted: ", countedHarvest);
+console.log({countedHarvest});
 
 const harvestToSort = countedHarvest.slice();
 

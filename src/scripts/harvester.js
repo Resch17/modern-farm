@@ -1,5 +1,4 @@
 export const harvestPlants = (plants) => {
-  
   let seedObjects = [];
   for (const plant of plants) {
     if (plant.type !== "Corn") {
@@ -14,6 +13,6 @@ export const harvestPlants = (plants) => {
       }
     }
   }
-  
+
   return seedObjects;
 };
